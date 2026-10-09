@@ -1,0 +1,329 @@
+
+.sp-login-page {
+  min-height: 100vh;
+  background: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: Inter, Arial, sans-serif;
+  color: #ffffff;
+}
+
+.sp-login-page * {
+  box-sizing: border-box;
+}
+
+.sp-login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1120px;
+  min-height: 650px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0,0,0,.5);
+}
+
+.sp-login-visual {
+  padding: 14px;
+}
+
+.sp-video-container {
+  height: 100%;
+  min-height: 620px;
+  position: relative;
+  border-radius: 17px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 70% 30%, #65501c 0%, transparent 40%),
+    linear-gradient(145deg, #2e2a20, #111111 75%);
+}
+
+.sp-video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.sp-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.1) 35%,
+    rgba(0,0,0,.85)
+  );
+}
+
+.sp-brand,
+.sp-mobile-brand {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.sp-tag,
+.sp-eyebrow {
+  color: #f5c451;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.sp-visual-text h1 {
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 15px 0;
+}
+
+.sp-visual-text h1 span {
+  color: #f5c451;
+}
+
+.sp-visual-text p {
+  color: #ddd;
+  font-size: 15px;
+}
+
+.sp-corridor {
+  padding: 14px 18px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 12px;
+  font-size: 13px;
+  backdrop-filter: blur(10px);
+}
+
+.sp-login-form-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+}
+
+.sp-form-content {
+  width: 100%;
+  max-width: 390px;
+}
+
+.sp-mobile-brand {
+  display: none;
+}
+
+.sp-welcome {
+  margin-bottom: 30px;
+}
+
+.sp-welcome h2 {
+  font-size: 38px;
+  letter-spacing: -1.5px;
+  margin: 12px 0;
+}
+
+.sp-welcome h2 span {
+  color: #f5c451;
+}
+
+.sp-welcome p {
+  color: #999;
+  font-size: 14px;
+}
+
+.sp-google-btn {
+  width: 100%;
+  height: 50px;
+  background: #292929;
+  color: white;
+  border: 1px solid #454545;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sp-google-btn:hover {
+  border-color: #f5c451;
+}
+
+.sp-google-icon {
+  font-weight: 900;
+  margin-right: 12px;
+  color: #4285f4;
+  font-size: 19px;
+}
+
+.sp-divider {
+  text-align: center;
+  margin: 25px 0;
+  color: #777;
+  font-size: 12px;
+  position: relative;
+}
+
+.sp-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #333;
+}
+
+.sp-divider span {
+  position: relative;
+  background: #1b1b1b;
+  padding: 0 15px;
+}
+
+.sp-form-content label {
+  display: block;
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.sp-form-content input {
+  width: 100%;
+  height: 49px;
+  border-radius: 9px;
+  border: 1px solid #383838;
+  background: #242424;
+  padding: 0 15px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.sp-form-content input:focus {
+  border-color: #f5c451;
+}
+
+.sp-password-field {
+  position: relative;
+}
+
+.sp-password-field input {
+  padding-right: 65px;
+}
+
+.sp-password-field button {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  background: none;
+  border: none;
+  color: #f5c451;
+  cursor: pointer;
+}
+
+.sp-forgot {
+  text-align: right;
+  margin: -8px 0 25px;
+}
+
+.sp-forgot button,
+.sp-signup button {
+  background: none;
+  border: none;
+  color: #f5c451;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sp-submit-btn {
+  width: 100%;
+  height: 52px;
+  background: #f5c451;
+  color: #141414;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sp-submit-btn:hover {
+  background: #ffda77;
+}
+
+.sp-submit-btn:disabled,
+.sp-google-btn:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.sp-signup {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #999;
+}
+
+.sp-footer {
+  text-align: center;
+  color: #666;
+  font-size: 11px;
+  margin-top: 55px;
+}
+
+.sp-error,
+.sp-success {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  overflow-wrap: anywhere;
+}
+
+.sp-error {
+  background: #4a2020;
+  color: #ff9999;
+}
+
+.sp-success {
+  background: #193c2a;
+  color: #8ee0a9;
+}
+
+@media (max-width: 800px) {
+  .sp-login-page {
+    padding: 15px;
+  }
+
+  .sp-login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sp-login-visual {
+    display: none;
+  }
+
+  .sp-login-form-panel {
+    padding: 40px 25px;
+  }
+
+  .sp-mobile-brand {
+    display: block;
+    margin-bottom: 40px;
+    color: #f5c451;
+  }
+
+  .sp-welcome h2 {
+    font-size: 32px;
+  }
+}
